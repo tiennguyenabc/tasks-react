@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import DataTable from 'react-data-table-component';
+import ConditionalRendering from './components/ConditionalRendering';
 class App extends Component {
   constructor() {
     super();
@@ -35,6 +36,9 @@ class App extends Component {
           columns={this.columns}
           data={this.data}
         />
+        <ConditionalRendering type="1"/>
+        <ConditionalRendering type="A"/>
+        <ConditionalRendering start="24"/>
       </div>
     );
   }
